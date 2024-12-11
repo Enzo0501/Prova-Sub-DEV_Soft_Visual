@@ -1,0 +1,39 @@
+###Listar Alunos
+GET http://localhost:5275/api/aluno/listar
+Content-Type: application/json
+
+###Cadastrar Aluno
+POST http://localhost:5275/api/aluno/cadastrar
+Content-Type: application/json
+
+{
+  "nome": "Enzo",
+  "sobrenome": "Januario"
+}
+
+###Listar IMCs
+GET http://localhost:5275/api/imc/listar
+Content-Type: application/json
+
+###Cadastrar IMC
+POST http://localhost:5275/api/imc/cadastrar
+Content-Type: application/json
+
+{
+  "alunoId": "fe5ad0ce-684a-473f-af77-e1b8a5b0bda5",
+  "altura": 1.75,
+  "peso": 70.5
+}
+
+###Listar IMCs por Aluno
+GET http://localhost:5275/api/imc/listar-por-aluno/fe5ad0ce-684a-473f-af77-e1b8a5b0bda5
+Content-Type: application/json
+
+###Alterar IMC
+PUT http://localhost:5275/api/imc/alterar/154d445c-a78e-44dd-afa5-a9f32efc4cd2
+Content-Type: application/json
+
+{
+  "altura": 1.80,
+  "peso": 75.0
+}
