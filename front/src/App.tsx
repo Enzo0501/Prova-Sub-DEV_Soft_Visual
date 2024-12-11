@@ -37,7 +37,7 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/" element={<h1>Bem-vindo ao Gerenciador de Alunos e IMCs!</h1>} />
+          <Route path="/" element={<h1>Gerenciador de Alunos e IMCs!</h1>} />
           <Route path="/pages/aluno/listar" element={<ListarAlunos />} />
           <Route path="/pages/aluno/cadastrar" element={<CadastrarAluno />} />
           <Route path="/pages/imc/cadastrar" element={<CadastrarImc />} />
